@@ -27,4 +27,10 @@ When your new project is ready for deployment, add a new Heroku application with
 
 ## Readme
 
-Once you deploy this project, please feel free to update this README file
+Now seed the database with the script using the following command:
+
+psql -U dunder_mifflin -d blogful -f ./seeds/seed.blogful_articles.sql
+
+This should report that it's inserted 10 rows which you can see in DBeaver by refreshing the table and looking at the data.
+
+You might want to leave a reminder of how to run this command in your README.md so that you can easily find it again.
